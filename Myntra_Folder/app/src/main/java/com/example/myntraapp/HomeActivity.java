@@ -36,13 +36,13 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.categories:
                 fragment = new CategoryFragment();
                 break;
-            case R.id.profile:
+            case R.id.studio:
                 fragment = new StudioFragment();
                 break;
-            case R.id.fourth:
+            case R.id.explore:
                 fragment = new ExploreFragment();
                 break;
-            case R.id.fifth:
+            case R.id.profile:
                 fragment = new ProfileFragment();
                 break;
         }
