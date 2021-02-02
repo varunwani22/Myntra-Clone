@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Dashboard"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/ic_person"/>
+    <item
+        android:title="Users"
+        android:id="@+id/users"
+        android:icon="@drawable/ic_person"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"/>
+    <item
+        android:title="Fourth"
+        android:id="@+id/fourth"
+        android:icon="@drawable/ic_person"/>
+    <item
+        android:title="Fifth"
+        android:id="@+id/fifth"
+        android:icon="@drawable/ic_person"/>
+</menu>
