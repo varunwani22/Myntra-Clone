@@ -30,19 +30,19 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         Fragment fragment = null;
         switch (menuItem.getItemId()){
-            case R.id.dashboard:
+            case R.id.home:
                 fragment = new HomeFragment();
                 break;
-            case R.id.users:
+            case R.id.categories:
                 fragment = new CategoryFragment();
                 break;
-            case R.id.profile:
+            case R.id.studio:
                 fragment = new StudioFragment();
                 break;
-            case R.id.fourth:
+            case R.id.explore:
                 fragment = new ExploreFragment();
                 break;
-            case R.id.fifth:
+            case R.id.profile:
                 fragment = new ProfileFragment();
                 break;
         }
