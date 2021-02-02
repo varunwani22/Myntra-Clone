@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_homesvgfile"/>
+    <item
+        android:title="@string/categories"
+        android:id="@+id/categories"
+        android:icon="@drawable/ic_categorysvgfile"/>
+    <item
+        android:title="@string/studio"
+        android:id="@+id/studio"
+        android:icon="@drawable/ic_studio"/>
+    <item
+        android:title="@string/explore"
+        android:id="@+id/explore"
+        android:icon="@drawable/ic_exploresvg"/>
+    <item
+        android:title="@string/profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"/>
+</menu>
