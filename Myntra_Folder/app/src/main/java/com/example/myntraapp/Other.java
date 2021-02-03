@@ -1,12 +1,10 @@
-package com.example.myntraapp.Activities;
+package com.example.myntraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.myntraapp.R;
-
-public class HomeActivity extends AppCompatActivity {
+public class Other extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyntraApp">
+        <activity android:name=".Other"></activity>
         <activity
             android:name=".Activities.SplashScreen"
             android:theme="@style/splashscreen">
@@ -22,7 +23,7 @@
         </activity>
         <activity
             android:name=".Activities.HomeActivity"
-            android:theme="@style/Theme.MyntraApp"></activity>
+            android:theme="@style/Theme.MyntraApp" />
     </application>
 
 </manifest>
