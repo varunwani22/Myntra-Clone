@@ -5,7 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavFragments.HomeFragment"
+    tools:context=".HomeActivity"
     android:fitsSystemWindows="true"
     tools:openDrawer = "start">
 
@@ -29,7 +29,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/logo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -57,13 +57,12 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black" />
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -71,7 +70,7 @@
                     app:srcCompat="@drawable/ic_search" />
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/notifications"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -79,7 +78,7 @@
                     app:srcCompat="@drawable/ic_notifications" />
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/wishList"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -87,7 +86,7 @@
                     app:srcCompat="@drawable/ic_like" />
 
                 <ImageButton
-                    android:id="@+id/imageButton7"
+                    android:id="@+id/shoppingBag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
