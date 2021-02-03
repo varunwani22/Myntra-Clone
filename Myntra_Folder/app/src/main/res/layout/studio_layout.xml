@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp10"
+    android:elevation="@dimen/dp10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNameOfPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:text="shvavsjdgsgdashdh,as,d"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp15"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="@dimen/dp15"
+            android:background="@drawable/ic_dot"
+            app:layout_constraintStart_toEndOf="@id/tvNameOfPerson"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:text="follow"
+            android:textColor="@color/themeColor"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/dot"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="dasdasda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNameOfPerson" />
+
+        <ImageView
+            android:id="@+id/imagePerson"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp450"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTimeAgo" />
+
+        <View
+            android:id="@+id/heart"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/ic_wishlist"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagePerson" />
+
+        <View
+            android:id="@+id/share"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/ic_baseline_share_24"
+            app:layout_constraintStart_toEndOf="@id/heart"
+            app:layout_constraintTop_toBottomOf="@id/imagePerson" />
+
+        <View
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/ic_baseline_bookmark_border_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagePerson" />
+
+        <TextView
+            android:id="@+id/studioDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:text="bsdbbss,"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heart" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

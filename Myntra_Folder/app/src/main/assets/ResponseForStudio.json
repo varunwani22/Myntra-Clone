@@ -1,0 +1,84 @@
+{
+  "studio": [
+    {
+      "id": 1,
+      "name": "Gaurav Pandey",
+      "follow": "Follow",
+      "online_status": "2 days ago",
+      "avatar": "https://www.bollywoodhungama.com/wp-content/uploads/2020/01/gc.jpg",
+      "description": "Good suite, Nice Color. #LikeTheColor #SuitesAreBest #MensFell"
+    },
+    {
+      "id": 2,
+      "name": "Nilu yuleena Thapa",
+      "follow": "Follow",
+      "online_status": "2 days ago",
+      "avatar": "https://pbs.twimg.com/profile_images/874728293861171200/2ThByCXz_400x400.jpg",
+      "description": "Decent White. #GirlsChoice #WhiteIsSimple"
+    },
+    {
+      "id": 3,
+      "name": "Chitra Patil",
+      "follow": "Follow",
+      "online_status": "3 days ago",
+      "avatar": "https://www.filmibeat.com/img/162x203/popcorn/profile_photos/vj-chitra-20201209112415-48436.jpg",
+      "description": "Perfect Saree for a women, Green shade, Nice Patterns with amazing boarder"
+    },
+    {
+      "id": 4,
+      "name": "Vidisha Kumble",
+      "follow": "Follow",
+      "online_status": "23 days ago",
+      "avatar": "https://m.media-amazon.com/images/I/41eHHnqDfCL.jpg",
+      "description": "Denim plus short, looks amazing in blue color. #BlueLover #CoolGirl #AwsomeOutfit"
+    },
+    {
+      "id": 5,
+      "name": "Baishali Bora",
+      "follow": "Follow",
+      "online_status": "2 days ago",
+      "avatar": "https://i.pinimg.com/474x/39/3e/75/393e750f1ab9e5ab85c0c98b356226e5.jpg",
+      "description": "Stripes pattern always suites. #Strips #GirlTop #LookingGood"
+    },
+    {
+      "id": 6,
+      "name": "Sztori",
+      "follow": "Follow",
+      "online_status": "3 hours ago",
+      "avatar": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F04%2Fnup_181708_1056-2000.jpg&q=85",
+      "description": "Black jacket is perfect for the cool weather, Comfortable in use with multiple pockets. #JacketIsLife #MensThing #MenInBlack"
+    },
+    {
+      "id": 7,
+      "name": "Sangria",
+      "follow": "Follow",
+      "online_status": "1 days ago",
+      "avatar": "https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw3fdb02bf/images/jeans-guide/012021-jeans-guide/girls/girls_skater@2x.png",
+      "description": "The jeans is perfect and comfortable with light weigth strehable."
+    },
+    {
+      "id": 8,
+      "name": "Divyanshi Tripathi",
+      "follow": "Follow",
+      "online_status": "2 days ago",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-T16JzTbbCq-vCE2H9jAMM3KWYMEmJLtblw&usqp=CAU",
+      "description": "Comfortable and Nice. #Outdoor #NiceLooks #BlackandWhite"
+    },
+    {
+      "id": 9,
+      "name": "Ujjwal Dhir",
+      "follow": "Follow",
+      "online_status": "1 days ago",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/1200px-Outdoors-man-portrait_%28cropped%29.jpg",
+      "description": "Casual TShirt. #Box #MensShirt #casual"
+    },
+    {
+      "id": 10,
+      "name": "Pranali Mistry ",
+      "follow": "Follow",
+      "online_status": "8 hours ago",
+      "avatar": "https://i.pinimg.com/736x/0e/7d/54/0e7d541bfba34ee09cdbebf98152bf09.jpg",
+      "description": "Western Wear. #western #Pink #GirlsThings #LooksGood"
+    }
+  ]
+}

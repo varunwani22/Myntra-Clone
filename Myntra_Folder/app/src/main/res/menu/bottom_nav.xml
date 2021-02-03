@@ -3,7 +3,7 @@
     <item
         android:title="@string/home"
         android:id="@+id/home"
-        android:icon="@drawable/ic_homesvgfile"/>
+        android:icon="@drawable/ic_myntra_logo"/>
     <item
         android:title="@string/categories"
         android:id="@+id/categories"
