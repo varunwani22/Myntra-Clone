@@ -10,7 +10,7 @@
             android:icon="@drawable/ic_store"
             android:title="Theme Stores" />
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_order"
             android:icon="@drawable/ic_orders"
             android:title="Orders" />
     </group>

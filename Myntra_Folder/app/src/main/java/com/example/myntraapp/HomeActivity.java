@@ -19,6 +19,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         BottomNavigationView tvBottomNav = (BottomNavigationView)findViewById(R.id.bottomNavigation);
         tvBottomNav.setOnNavigationItemSelectedListener(this);
         loadFragment(new HomeFragment());
+
     }
 
     private void loadFragment(Fragment fragment) {
