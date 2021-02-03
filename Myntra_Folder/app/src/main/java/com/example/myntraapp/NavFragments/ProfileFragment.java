@@ -1,4 +1,4 @@
-package com.example.myntraapp;
+package com.example.myntraapp.NavFragments;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.myntraapp.R;
 
 /**
  * A simple {@link Fragment} subclass.

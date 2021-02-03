@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="themeColor">#FF3F6C</color>
+    <color name="orange">#FFA500</color>
 </resources>

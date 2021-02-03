@@ -3,11 +3,11 @@
     <item
         android:title="@string/home"
         android:id="@+id/home"
-        android:icon="@drawable/ic_homesvgfile"/>
+        android:icon="@drawable/ic_home"/>
     <item
         android:title="@string/categories"
         android:id="@+id/categories"
-        android:icon="@drawable/ic_categorysvgfile"/>
+        android:icon="@drawable/ic_category"/>
     <item
         android:title="@string/studio"
         android:id="@+id/studio"
@@ -15,9 +15,9 @@
     <item
         android:title="@string/explore"
         android:id="@+id/explore"
-        android:icon="@drawable/ic_exploresvg"/>
+        android:icon="@drawable/ic_explorer"/>
     <item
         android:title="@string/profile"
         android:id="@+id/profile"
-        android:icon="@drawable/ic_person"/>
+        android:icon="@drawable/ic_user"/>
 </menu>

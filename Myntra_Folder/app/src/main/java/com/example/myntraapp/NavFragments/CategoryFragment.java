@@ -1,4 +1,4 @@
-package com.example.myntraapp;
+package com.example.myntraapp.NavFragments;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.myntraapp.R;
 
 /**
  * A simple {@link Fragment} subclass.

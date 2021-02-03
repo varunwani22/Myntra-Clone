@@ -1,4 +1,4 @@
-package com.example.myntraapp;
+package com.example.myntraapp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,8 +6,18 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.WindowManager;
+import android.widget.RelativeLayout;
+import android.widget.Toolbar;
 
+import com.example.myntraapp.NavFragments.CategoryFragment;
+import com.example.myntraapp.NavFragments.ExploreFragment;
+import com.example.myntraapp.NavFragments.HomeFragment;
+import com.example.myntraapp.NavFragments.ProfileFragment;
+import com.example.myntraapp.R;
+import com.example.myntraapp.NavFragments.StudioFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class HomeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -15,7 +25,9 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         BottomNavigationView tvBottomNav = (BottomNavigationView)findViewById(R.id.bottomNavigation);
         tvBottomNav.setOnNavigationItemSelectedListener(this);
         loadFragment(new HomeFragment());
