@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    app:srcCompat="@drawable/ic_like" />
+                    app:srcCompat="@drawable/ic_wishlist" />
 
                 <ImageButton
                     android:id="@+id/shoppingBag"
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    app:srcCompat="@drawable/ic_shoping_bag" />
+                    app:srcCompat="@drawable/ic_shoppingbag" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
         <com.google.android.material.bottomnavigation.BottomNavigationView
