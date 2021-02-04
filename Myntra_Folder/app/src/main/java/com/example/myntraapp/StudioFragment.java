@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -22,14 +23,13 @@ import java.io.InputStream;
 import java.lang.reflect.Type;
 
 
-public class StudioFragment extends Fragment {
+public class StudioFragment extends Fragment implements ItemClickListener{
 
     private RecyclerView recyclerViewForStudio;
+    private ProgressBar progressBarStudio;
+    private StudioAdapter studioAdapter;
 
-
-
-    public StudioFragment() {
-        // Required empty public constructor
+    public StudioFragment() {// Required empty public constructor
     }
 
     @Override
@@ -54,6 +54,8 @@ public class StudioFragment extends Fragment {
 
     private void initViews(View view) {
         recyclerViewForStudio = view.findViewById(R.id.recyclerViewForStudio);
+        progressBarStudio = view.findViewById(R.id.progressBarStudio);
+        progressBarStudio.setVisibility(View.VISIBLE);
     }
 
 
@@ -82,10 +84,15 @@ public class StudioFragment extends Fragment {
     }
 
     private void setRecyclerAdapter(ResponseStudioModel responseStudioModel) {
-        StudioAdapter studioAdapter = new StudioAdapter(responseStudioModel.getStudio());
+        progressBarStudio.setVisibility(View.GONE);
+        studioAdapter = new StudioAdapter(responseStudioModel.getStudio(),this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerViewForStudio.setLayoutManager(linearLayoutManager);
         recyclerViewForStudio.setAdapter(studioAdapter);
     }
 
+
+    @Override
+    public void onItemClick(StudioStudioModel studioStudioModel, int position) {
+    }
 }

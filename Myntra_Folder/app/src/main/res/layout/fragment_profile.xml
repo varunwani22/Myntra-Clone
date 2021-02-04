@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#d3d3d3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d3d3d3"
     tools:context=".ProfileFragment">
 
     <androidx.cardview.widget.CardView
@@ -46,10 +46,10 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
-                    android:paddingTop="@dimen/dp30"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@color/brown"
-                    android:layout_height="wrap_content">
+                    android:paddingTop="@dimen/dp30">
 
                     <ImageView
                         android:layout_width="120dp"
@@ -57,13 +57,14 @@
                         android:src="@drawable/profile_user_mage" />
 
                     <Button
+                        android:id="@+id/btnLogin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
                         android:layout_gravity="center"
                         android:layout_margin="@dimen/dp20"
                         android:background="@color/themeColor"
-                        android:text="@string/login_signup" />
+                        android:text="@string/login_signup"
+                        android:textColor="@color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -93,7 +94,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/orders"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp20"
+                        android:textSize="@dimen/sp17"
                         android:textStyle="bold" />
 
                     <TextView
@@ -106,7 +107,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/help_center"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp20"
+                        android:textSize="@dimen/sp17"
                         android:textStyle="bold" />
 
                     <TextView
@@ -119,7 +120,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/wishlist"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp20"
+                        android:textSize="@dimen/sp17"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -150,7 +151,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/scan_for_coupon"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp20"
+                        android:textSize="@dimen/sp17"
                         android:textStyle="bold" />
 
                     <TextView
@@ -163,7 +164,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/refer_and_earn"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp20"
+                        android:textSize="@dimen/sp17"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -192,7 +193,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/faqs"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp15" />
+                        android:textSize="@dimen/sp12" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -202,7 +203,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/about_us"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp15" />
+                        android:textSize="@dimen/sp12" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -212,7 +213,7 @@
                         android:padding="@dimen/dp10"
                         android:text="@string/terms_of_use"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp15" />
+                        android:textSize="@dimen/sp12" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -222,14 +223,15 @@
                         android:padding="@dimen/dp10"
                         android:text="PRIVACY POLICY"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/sp15" />
+                        android:textSize="@dimen/sp12" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="60dp"
+                android:layout_marginTop="@dimen/dp60"
+                android:layout_marginBottom="@dimen/dp60"
                 android:text="@string/app_version_4_2010_1"
                 android:textSize="@dimen/sp15"
                 app:layout_constraintEnd_toEndOf="parent"

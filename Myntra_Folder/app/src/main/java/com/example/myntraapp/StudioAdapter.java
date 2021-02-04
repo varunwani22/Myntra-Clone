@@ -11,16 +11,18 @@ import java.util.List;
 
 public class StudioAdapter extends RecyclerView.Adapter<StudioViewHolder> {
     private List<StudioStudioModel> studioModelList;
+    private ItemClickListener itemClickListener;
 
-    public StudioAdapter(List<StudioStudioModel> studioModelList) {
+    public StudioAdapter(List<StudioStudioModel> studioModelList, ItemClickListener itemClickListener) {
         this.studioModelList = studioModelList;
+        this.itemClickListener = itemClickListener;
     }
 
     @NonNull
     @Override
     public StudioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.studio_layout, parent,false);
-        return new StudioViewHolder(view);
+        return new StudioViewHolder(view, itemClickListener);
     }
 
     @Override
