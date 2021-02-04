@@ -21,12 +21,10 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
     public View mLikePost;
     public View mSavePost;
     private TextView mStudioDescription;
-    private ItemClickListener itemClickListener;
 
 
     public StudioViewHolder(@NonNull View itemView, ItemClickListener itemClickListener) {
         super(itemView);
-        this.itemClickListener = itemClickListener;
         initViews(itemView);
     }
 

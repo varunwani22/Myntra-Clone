@@ -32,4 +32,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="wishlistCaps">WISHLIST</string>
+    <string name="add_to_bag">ADD TO BAG</string>
+    <string name="disDetails">Display: Analogue Movement: Quartz Power source: Battery Dial style: Solid round stainless steel dial Features: Reset Time, Reset Time, Glow in the Dark Inlays Strap style: Brown regular, leather strap with a tang closure Water resistance: 50 m Warranty: 2 years Warranty provided by brand/manufacturer Manufactured by: Daniel Klein group Country of Origin: Hong Kong</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="total_amount">Total Amount</string>
 </resources>

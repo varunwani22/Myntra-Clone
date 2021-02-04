@@ -16,9 +16,11 @@ public class ShoppingViewHolder extends RecyclerView.ViewHolder {
     private TextView mTvShopBrand;
     private TextView mTvShopTitle;
     private TextView mTvShopPrice;
+    private ListenerForShopping listenerForShopping;
 
-    public ShoppingViewHolder(@NonNull View itemView) {
+    public ShoppingViewHolder(@NonNull View itemView, ListenerForShopping listenerForShopping) {
         super(itemView);
+        this.listenerForShopping = listenerForShopping;
         initViewAndListeners(itemView);
     }
 
@@ -36,6 +38,13 @@ public class ShoppingViewHolder extends RecyclerView.ViewHolder {
         mTvShopBrand.setText(shopModel.getBrand());
         mTvShopTitle.setText(shopModel.getTitle());
         mTvShopPrice.setText(shopModel.getPrice());
+
+        mShopCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listenerForShopping.onItemClicked(shopModel,getAdapterPosition());
+            }
+        });
 
     }
 
