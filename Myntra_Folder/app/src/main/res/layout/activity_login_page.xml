@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPageActivity">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/loginImage"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@id/tvLogin"
+        android:layout_marginStart="10dp"
+        android:text="or"
+        app:layout_constraintBottom_toBottomOf="@id/tvLogin"
+        app:layout_constraintTop_toBottomOf="@id/loginImage"/>
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/loginImage"
+        app:layout_constraintStart_toEndOf="@id/tvOr"
+        android:layout_marginTop="30dp"
+        android:text="Signup"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/llNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_enter_number"
+        app:layout_constraintTop_toBottomOf="@id/tvLogin"
+        android:layout_margin="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91  |"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:hint="Mobile Number"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_enter_number"
+        app:layout_constraintTop_toBottomOf="@id/llNumber"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:hint="Name"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_enter_number"
+        app:layout_constraintTop_toBottomOf="@id/llName"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:hint="Password"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llPassword"
+            android:textSize="12dp"
+            android:textColor="@color/themeColor"
+            android:text="By continuing, I agree to the Terms and privacy Policy"
+            />
+         <Button
+             android:id="@+id/btnContinue"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@id/tvTerms"
+             android:background="@color/themeColor"
+             android:text="Continue"
+             android:layout_margin="30dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
