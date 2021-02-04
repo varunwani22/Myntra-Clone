@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    app:srcCompat="@drawable/ic_shoppingbag" />
+                    app:srcCompat="@drawable/ic_shoppingbag"/>
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
         <com.google.android.material.bottomnavigation.BottomNavigationView
