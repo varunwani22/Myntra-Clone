@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 
+import com.example.myntraapp.HomeActivity;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.myntraapp.Activities.HomeActivity;
 
 public class SplashScreen extends AppCompatActivity {
     @Override
