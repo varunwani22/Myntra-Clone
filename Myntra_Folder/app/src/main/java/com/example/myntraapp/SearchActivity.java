@@ -27,7 +27,7 @@ public class SearchActivity extends AppCompatActivity {
     private ShoppingAdapter shoppingAdapter;
     private Button mBtnMic;
     private String Category;
-    private static String sample = "men";
+    private String sample;
     private ProgressBar progressBar;
     private RecyclerView recyclerView;
 
@@ -46,6 +46,7 @@ public class SearchActivity extends AppCompatActivity {
         mBtnCamera = findViewById(R.id.btnCamera);
         Category = mSearchCategory.getText().toString();
         progressBar.setVisibility(View.VISIBLE);
+//        sample = men;
     }
 
     @Override
@@ -55,11 +56,11 @@ public class SearchActivity extends AppCompatActivity {
             mBtnSearch.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (Category.contentEquals(sample)) {
-
-                    }else {
-//                        Toast.makeText(SearchActivity.this, "Item not found", Toast.LENGTH_SHORT).show();
+                    if (Category.equals("men")) {
                         fetchDataFromAssets();
+                    }else {
+                        Toast.makeText(SearchActivity.this, "Item not found", Toast.LENGTH_SHORT).show();
+//                        fetchDataFromAssets();
                     }
                 }
             });
