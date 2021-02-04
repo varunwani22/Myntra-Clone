@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.myntraapp.NavFragments.CategoryFragment;
+import com.example.myntraapp.NavFragments.ExploreFragment;
+import com.example.myntraapp.NavFragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -37,13 +40,13 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new CategoryFragment();
                 break;
             case R.id.studio:
-                fragment = new StudioFragment();
+                fragment = new com.example.myntraapp.StudioFragment();
                 break;
             case R.id.explore:
                 fragment = new ExploreFragment();
                 break;
             case R.id.profile:
-                fragment = new ProfileFragment();
+                fragment = new com.example.myntraapp.ProfileFragment();
                 break;
         }
         if (fragment != null){
