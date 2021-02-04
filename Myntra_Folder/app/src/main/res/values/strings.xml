@@ -17,4 +17,8 @@
     <string name="about_us">ABOUT US</string>
     <string name="terms_of_use">TERMS OF USE</string>
     <string name="app_version_4_2010_1">APP VERSION 4.2010.1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
