@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavFragments.StudioFragment">
+    tools:context=".StudioFragment">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCardView"
+        app:cardElevation="@dimen/dp10"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp10">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Studio"
+                android:padding="@dimen/dp10"
+                android:textSize="@dimen/sp25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/search"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/ic_baseline_search_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/setting"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/ic_baseline_settings_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/search"/>
+            <View
+                android:id="@+id/bookmark"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/ic_baseline_bookmark_border_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/setting"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewForStudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBarStudio"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp70"
+            android:layout_width="wrap_content"
+            android:indeterminateTint="@color/themeColor"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+</LinearLayout>
+
