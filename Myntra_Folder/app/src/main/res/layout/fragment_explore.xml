@@ -1,13 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ExploreFragment">
 
-   <include
-       android:layout_width="match_parent"
-       
-       android:layout_height="match_parent"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:text="Explore on Myntra"
+            android:textSize="@dimen/sp25" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/explore">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:elevation="@dimen/dp10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/explore">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Myntra Mall"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Myntra Insider"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Gift Cards"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:elevation="@dimen/dp10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/scanForCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/play_earn"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableStart="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Myntra Move"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:elevation="@dimen/dp10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/refer_earn"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Scan for Coupon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Myntra Fashion Superstar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:drawableLeft="@drawable/ic_order_box"
+                    android:drawablePadding="@dimen/dp20"
+                    android:padding="@dimen/dp10"
+                    android:text="Myntra Masterclass"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
