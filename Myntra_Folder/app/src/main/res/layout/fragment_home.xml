@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".HomeFragment">
 
@@ -20,60 +21,62 @@
             android:gravity="center"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
                 android:layout_weight="1"
+                android:padding="@dimen/dp10"
+                android:layout_width="@dimen/dp45"
+                android:layout_height="wrap_content"
                 android:background="@color/white"
-                app:srcCompat="@drawable/ic_myntra_logo" />
+              android:src="@drawable/myntra_logo_home"
+                />
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Become"
                     android:textColor="@color/black"
-                    android:textSize="8sp" />
+                    android:textSize="10sp" />
                 <TextView
-                    android:layout_width="37dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="INSIDER"
                     android:textColor="@color/themeColor"
                     android:textSize="10sp" />
             </LinearLayout>
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black" />
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@color/white"
+                android:padding="@dimen/dp15"
                 app:srcCompat="@drawable/ic_search" />
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@color/white"
+                android:padding="@dimen/dp15"
                 app:srcCompat="@drawable/ic_notifications" />
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:padding="@dimen/dp15"
                 android:background="@color/white"
                 app:srcCompat="@drawable/ic_wishlist" />
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:padding="@dimen/dp15"
                 android:background="@color/white"
                 app:srcCompat="@drawable/ic_shopping_bag"/>
         </LinearLayout>

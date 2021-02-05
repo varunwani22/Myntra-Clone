@@ -1,5 +1,6 @@
 package com.example.myntraapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,13 +11,14 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeFragment extends Fragment implements NavigationView.OnNavigationItemSelectedListener {
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,11 +35,9 @@ public class HomeFragment extends Fragment implements NavigationView.OnNavigatio
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initViewsAndListeners(view);
+
+//         THIS FRAGMENT IS FOR TRAIL NOT FOR USE...
     }
 
-    private void initViewsAndListeners(View view) {
 
-
-    }
 }

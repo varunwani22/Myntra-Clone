@@ -69,8 +69,8 @@ public class AddToBaggage extends Fragment {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setTitle("Your Order is Placed!");
-                builder.setMessage("")
+                builder.setTitle("CONGRATULATION..");
+                builder.setMessage("Your Order is Placed!")
                         .show();
             }
         });

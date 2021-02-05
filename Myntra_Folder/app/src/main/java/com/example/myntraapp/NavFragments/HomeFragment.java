@@ -1,5 +1,6 @@
 package com.example.myntraapp.NavFragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.myntraapp.R;
+import com.example.myntraapp.SearchActivity;
 import com.example.myntraapp.ViewPagerAdapterHomeFirstFrag;
 import com.google.android.material.tabs.TabLayout;
 
@@ -31,7 +33,7 @@ public class HomeFragment extends Fragment {
     private ImageView mPremiumTitleImage, mPremiumImageOne, mPremiumImageTwo, mPremiumImageThree, mPremiumImageFour, mPremiumImageFive, mPremiumImageSix, mPremiumImageSeven;
     private ImageView mMostLovedTitle, mMostLovedImageOne, mMostLovedImageTwo, mMostLovedImageThree, mMostLovedImageFour, mMostLovedImageFive, mMostLovedImageSix, mMostLovedImageSeven, mMostLovedImageEight, mMostLovedImageNine;
     private ImageView mEndlessGiftsTitle, mEndlessGiftsImageOne, mEndlessGiftsImageTwo, mEndlessGiftsImageThree, mEndlessGiftsImageFour, mEndlessGiftsImageFive, mEndlessGiftsImageSix;
-
+    private ImageView mBtnSearchProduct;
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
@@ -60,6 +62,17 @@ public class HomeFragment extends Fragment {
     }
 
     private void initViewAndListeners(View view) {
+        mBtnSearchProduct = view.findViewById(R.id.imageButton4);
+        mBtnSearchProduct = view.findViewById(R.id.imageButton4);
+
+        mBtnSearchProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
         viewPager = view.findViewById(R.id.viewpager);
         tabLayout = view.findViewById(R.id.tabLayout);
 
