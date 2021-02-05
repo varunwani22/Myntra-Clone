@@ -3,19 +3,19 @@ package com.example.myntraapp;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeFragment extends Fragment implements NavigationView.OnNavigationItemSelectedListener {
-
-
-
 
 
     @Override
@@ -28,5 +28,16 @@ public class HomeFragment extends Fragment implements NavigationView.OnNavigatio
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initViewsAndListeners(view);
+    }
+
+    private void initViewsAndListeners(View view) {
+
+
     }
 }

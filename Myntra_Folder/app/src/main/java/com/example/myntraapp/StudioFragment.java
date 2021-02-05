@@ -1,4 +1,4 @@
-package com.example.myntraapp;
+package com.example.myntraapp.NavFragments;
 
 
 import android.os.Bundle;
@@ -15,6 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
+import com.example.myntraapp.ItemClickListener;
+import com.example.myntraapp.R;
+import com.example.myntraapp.ResponseStudioModel;
+import com.example.myntraapp.StudioAdapter;
+import com.example.myntraapp.StudioStudioModel;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -22,7 +27,7 @@ import java.io.InputStream;
 import java.lang.reflect.Type;
 
 
-public class StudioFragment extends Fragment implements ItemClickListener{
+public class StudioFragment extends Fragment implements ItemClickListener {
 
     private RecyclerView recyclerViewForStudio;
     private ProgressBar progressBarStudio;
@@ -93,5 +98,8 @@ public class StudioFragment extends Fragment implements ItemClickListener{
 
     @Override
     public void onItemClick(StudioStudioModel studioStudioModel, int position) {
+
     }
+
+
 }

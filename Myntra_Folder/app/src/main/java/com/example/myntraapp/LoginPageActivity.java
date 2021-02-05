@@ -39,7 +39,8 @@ public class LoginPageActivity extends AppCompatActivity {
                     PreferenceHelper.writeStringToPreference(PREF_NAME_KEY,mEtName.getText().toString());
                     PreferenceHelper.writeLongToPreference(PREF_NUMBER_KEY, Long.valueOf(mEtNumber.getText().toString()));
                     PreferenceHelper.writeBooleanToPreference(PREF_BOOLEAN_KEY,true);
-                    Intent intent = new Intent();
+                    Intent intent = new Intent(LoginPageActivity.this,HomeActivity.class);
+                    startActivity(intent);
                 }
             }
         });

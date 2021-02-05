@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d3d3d3"
-    tools:context=".ProfileFragment">
+    android:background="@color/white"
+    tools:context=".NavFragments.ProfileFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/profileCardView"
@@ -226,17 +226,28 @@
                         android:textSize="@dimen/sp12" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp30"
+                android:textColor="@color/themeColor"
+                android:text="Log out"
+                android:background="@drawable/log_out_rectengle_box"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp20"
+                app:layout_constraintTop_toBottomOf="@id/card4"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp60"
-                android:layout_marginBottom="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp30"
                 android:text="@string/app_version_4_2010_1"
                 android:textSize="@dimen/sp15"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/card4" />
+                app:layout_constraintTop_toBottomOf="@id/btnLogout" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

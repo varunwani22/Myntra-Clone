@@ -6,7 +6,7 @@
     android:background="#d3d3d3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudioFragment">
+    tools:context=".NavFragments.StudioFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/profileCardView"

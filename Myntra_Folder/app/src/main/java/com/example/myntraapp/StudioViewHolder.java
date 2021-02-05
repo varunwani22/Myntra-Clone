@@ -21,10 +21,13 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
     public View mLikePost;
     public View mSavePost;
     private TextView mStudioDescription;
+    private Boolean token= false;
+    private ItemClickListener itemClickListener;
 
 
     public StudioViewHolder(@NonNull View itemView, ItemClickListener itemClickListener) {
         super(itemView);
+        this.itemClickListener = itemClickListener;
         initViews(itemView);
     }
 
@@ -38,12 +41,11 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
         mStudioDescription = itemView.findViewById(R.id.studioDescription);
     }
 
-    public void setStudioData(StudioStudioModel studioStudioModel){
+    public void setStudioData(StudioStudioModel studioStudioModel) {
         mStudioName.setText(studioStudioModel.getName());
         mStudioFollow.setText(studioStudioModel.getFollow());
         mStudioTime.setText(studioStudioModel.getOnlineStatus());
         Glide.with(mStudioImage).load(studioStudioModel.getAvatar()).into(mStudioImage);
         mStudioDescription.setText(studioStudioModel.getDescription());
-
     }
 }
