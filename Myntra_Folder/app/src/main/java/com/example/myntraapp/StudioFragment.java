@@ -1,6 +1,7 @@
 package com.example.myntraapp.NavFragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -98,7 +99,11 @@ public class StudioFragment extends Fragment implements ItemClickListener {
 
     @Override
     public void onItemClick(StudioStudioModel studioStudioModel, int position) {
-
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT,"Hey Checkout this Image it looks Cool  "+ studioStudioModel.getAvatar());
+        startActivity(Intent.createChooser(intent,"Share this Image"));
     }
 
 
