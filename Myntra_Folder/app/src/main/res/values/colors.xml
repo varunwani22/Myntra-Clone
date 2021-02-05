@@ -10,4 +10,6 @@
     <color name="themeColor">#FF3F6C</color>
     <color name="brown">#5A3825</color>
     <color name="orange">#FFA500</color>
+    <color name="light_grey">#212121</color>
+    <color name="light_pink">#F76196</color>
 </resources>

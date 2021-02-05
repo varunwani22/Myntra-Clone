@@ -6,7 +6,7 @@
       "brand": "Nike",
       "title": "AIR ZOOM PEGASUS",
       "price": "Rs.9425(18% OFF)",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979792/2021/1/4/f472c87a-b6a1-4bc9-bca0-fe9623c732781609749964408-Jordan-DeltaMens-Shoe-1341609749961996-1.jpg",
+      "avatar": "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/11979982/2021/1/21/edd96a88-8712-4117-93f9-3f92bb0751471611224796274-Nike-Men-Black-AIR-ZOOM-PEGASUS-37-Running-Shoes-98161122479-1.jpg",
       "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon. A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction. Cushioned footbed. Textured and patterned outsole"
     },
     {
@@ -15,7 +15,7 @@
       "brand": "Nike",
       "title": "Black Quest 3",
       "price": "Rs.9295",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11980026/2020/12/23/02b072c0-c489-46d3-a3e4-52cb2817d50a1608721666549-AIR-FORCE-1-07-4441608721664360-1.jpg",
+      "avatar": "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/11652540/2020/9/11/8b14b774-d9f3-453b-b167-5f6b5da9c6be1599794608128-Nike-Men-Red-ZOOM-WINFLO-7-Running-Shoes-7701599794607179-1.jpg",
       "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open. so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon .A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction Cushioned footbed Textured and patterned outsoler"
     },
     {
@@ -24,7 +24,7 @@
       "brand": "Nike",
       "title": "Shield Running Shoe",
       "price": "Rs.5995",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13327752/2021/1/25/68958407-03f7-4617-99b2-84864019be321611567644722-Nike-Quest-3-Mens-Running-Shoe-561611567642574-1.jpg",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11979888/2021/1/4/06e8aa3e-aaac-4b66-9455-cb8cf07c583c1609750005650-W-AIR-MAX-2090-2201609750003848-1.jpg",
       "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes A padded collar with internal nodes provides comfort around your Achilles tendon A moulded groove in the forefoot helps the shoe flex"
     },
     {
@@ -33,7 +33,7 @@
       "brand": "Puma",
       "title": "Quest Running Shoe",
       "price": "Rs.6520",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738820/2020/12/23/fc857867-1659-4fb4-8ac8-6ec8bdfc4e141608716795080-Nike-Quest-3-Shield-Mens-Running-Shoe-4581608716792681-1.jpg",
+      "avatar": "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/11334966/2020/5/21/4b9bc54b-c066-4cdc-a623-672ecdfd771e1590079930281PumaMenNavyBlueDryflexIDPSneakers1.jpg",
       "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon"
     },
     {
@@ -41,8 +41,17 @@
       "category": "shoe",
       "brand": "Puma",
       "title": "Running Shoe",
-      "price": "Rs.9425(18% OFF)",
+      "price": "Rs.3425(18% OFF)",
       "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738552/2020/12/23/57912158-952a-47c9-a5eb-d72bbd8020611608712536670-Jordan-Delta-Mens-Shoe-3351608712534943-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes"
+    },
+    {
+      "id": 5,
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Running Shoe",
+      "price": "Rs.5000(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/11938670/2020/6/13/1ac406bd-5081-4616-a611-9de46fc6db091592060429938Pumagrey1.jpg",
       "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes"
     },
     {
