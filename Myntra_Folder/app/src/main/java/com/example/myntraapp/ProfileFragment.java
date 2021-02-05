@@ -1,5 +1,6 @@
 package com.example.myntraapp.NavFragments;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -69,7 +70,10 @@ public class ProfileFragment extends Fragment {
                 PreferenceHelper.writeBooleanToPreference(LoginPageActivity.PREF_BOOLEAN_KEY,false);
                 PreferenceHelper.writeStringToPreference(LoginPageActivity.PREF_NAME_KEY,"");
                 PreferenceHelper.writeLongToPreference(LoginPageActivity.PREF_NUMBER_KEY, (long)0);
-                Toast.makeText(getContext(),"You Logout Successfully",Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                builder.setMessage("You Logout successfully");
+                builder.setCancelable(true);
+                builder.show();
                 mBtnLogin.setText("Login/SignUP");
             }
         });

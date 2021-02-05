@@ -40,13 +40,13 @@
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/dp10"
                     android:background="@color/white"
-                    android:hint="Search for Items     "
+                    android:hint="Search for Items here    "
                     android:textSize="@dimen/sp15" />
 
                 <Button
                     android:id="@+id/btnSearchItem"
-                    android:layout_width="@dimen/dp40"
-                    android:layout_height="@dimen/dp40"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:background="@drawable/ic_baseline_search_24"

@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -47,5 +48,6 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
         mStudioTime.setText(studioStudioModel.getOnlineStatus());
         Glide.with(mStudioImage).load(studioStudioModel.getAvatar()).into(mStudioImage);
         mStudioDescription.setText(studioStudioModel.getDescription());
+
     }
 }
