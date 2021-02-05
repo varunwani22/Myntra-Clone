@@ -1,5 +1,6 @@
 package com.example.myntraapp.NavFragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.myntraapp.R;
+import com.example.myntraapp.WebViewActivity;
 
 public class CategoryFragment extends Fragment {
 private ImageView mImageSeasonOfferCategory;
@@ -38,7 +40,10 @@ private ImageView mDressesCategory;
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initViewAndClickListeners(view);
+        getDataForWebvews();
     }
+
+
 
     private void initViewAndClickListeners(View view) {
         mImageSeasonOfferCategory = view.findViewById(R.id.imageSeasonOffersCategory);
@@ -60,4 +65,35 @@ private ImageView mDressesCategory;
         Glide.with(mDressesCategory).load("https://cdn.static-zoutons.com/images/originals/blog/BANNER67_1609340098.jpg").into(mDressesCategory);
 
     }
+    private void getDataForWebvews() {
+
+        mFurnishCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/home-living");
+                startActivity(intent);
+            }
+        });
+
+        mImageKidsCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/kids");
+                startActivity(intent);
+            }
+        });
+
+        mImageSeasonOfferCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/offers");
+                startActivity(intent);
+            }
+        });
+    }
+
+
 }

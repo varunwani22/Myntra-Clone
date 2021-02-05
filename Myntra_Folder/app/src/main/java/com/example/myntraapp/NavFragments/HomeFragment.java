@@ -12,9 +12,11 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.myntraapp.CartActivity;
 import com.example.myntraapp.R;
 import com.example.myntraapp.SearchActivity;
 import com.example.myntraapp.ViewPagerAdapterHomeFirstFrag;
@@ -37,6 +39,7 @@ public class HomeFragment extends Fragment {
     private ImageView mBtnSearchProduct;
     private ViewPager viewPager;
     private TabLayout tabLayout;
+    private ImageButton addToCart;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,6 +67,14 @@ public class HomeFragment extends Fragment {
     }
 
     private void initViewAndListeners(View view) {
+        addToCart = view.findViewById(R.id.imageButton7);
+        addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cart = new Intent(getActivity(), CartActivity.class);
+                startActivity(cart);
+            }
+        });
         mBtnSearchProduct = view.findViewById(R.id.imageButton4);
         mBtnSearchProduct = view.findViewById(R.id.imageButton4);
 
