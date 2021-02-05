@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.example.myntraapp.R;
 import com.example.myntraapp.SearchActivity;
 import com.example.myntraapp.ViewPagerAdapterHomeFirstFrag;
+import com.example.myntraapp.WebViewActivity;
 import com.google.android.material.tabs.TabLayout;
 
 public class HomeFragment extends Fragment {
@@ -47,10 +48,11 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         initViewAndListeners(view);
         setViewPagerAdapterForHomeFirstFrag();
+        getLinkForWeb();
     }
+
 
     private void setViewPagerAdapterForHomeFirstFrag() {
 
@@ -86,11 +88,15 @@ public class HomeFragment extends Fragment {
         mRoundImageEight = view.findViewById(R.id.roundImageEight);
 
         mBestBuysImageOne = view.findViewById(R.id.bestBuysImageOne);
+
+
         mBestBuysImageTwo = view.findViewById(R.id.bestBuysImageTwo);
+
         mBestBuysImageThree = view.findViewById(R.id.bestBuysImageThree);
         mBestBuysImageFour = view.findViewById(R.id.bestBuysImageFour);
 
         mGlowUpSaleImage = view.findViewById(R.id.glowUpSaleImage);
+
 
         mValentineImageOne = view.findViewById(R.id.valentinesImageOne);
         mValentineImageTwo = view.findViewById(R.id.valentinesImageTwo);
@@ -227,5 +233,59 @@ public class HomeFragment extends Fragment {
         Glide.with(mEndlessGiftsImageFive).load("https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2020/7/24/8cc98a69-e6ef-4565-9043-8d60fef514971595597920988-GiftsbyRelations-colleague30.jpg").into(mEndlessGiftsImageFive);
         Glide.with(mEndlessGiftsImageSix).load("https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2020/7/24/0b52bbf4-4fcd-40fe-bbf0-d1ac42a826a21595597921071-GiftsbyRelations-GrandParents33.jpg").into(mEndlessGiftsImageSix);
 
+    }
+
+
+    private void getLinkForWeb() {
+        mBestBuysImageOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/under-599-store");
+                startActivity(intent);
+            }
+        });
+
+        mGlowUpSaleImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/glowup-women");
+                startActivity(intent);
+            }
+        });
+
+        mBestBuysImageTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/under-799-store");
+                startActivity(intent);
+            }
+        });
+        mRoundImageOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/men");
+                startActivity(intent);
+            }
+        });
+        mRoundImageTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/women");
+                startActivity(intent);
+            }
+        });
+        mRoundImageThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class);
+                intent.putExtra("one", "https://www.myntra.com/shop/kids");
+                startActivity(intent);
+            }
+        });
     }
 }

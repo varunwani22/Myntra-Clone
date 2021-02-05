@@ -56,129 +56,165 @@
     },
     {
       "id": 1,
-      "category": "t shirt",
-      "brand": "HRX",
-      "title": "Men Black Round Neck ",
-      "price": "Rs.600",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2378362/2018/6/9/270e0a7e-365b-4640-9433-b269c60bf3061528527188563-Moda-Rapido-Men-Maroon-Printed-Round-Neck-T-shirt-3811528527-1.jpg",
-      "description": "marun color full sleeves"
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "AIR ZOOM PEGASUS",
+      "price": "Rs.9425(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979792/2021/1/4/f472c87a-b6a1-4bc9-bca0-fe9623c732781609749964408-Jordan-DeltaMens-Shoe-1341609749961996-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon. A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction. Cushioned footbed. Textured and patterned outsole"
     },
     {
       "id": 2,
-      "category": "t shirt",
-      "brand": "Peter England",
-      "title": "Men T-shirt",
-      "price": "Rs.900",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg",
-      "description": "Black and orange printed T-shirt, has a round neck, short sleeves"
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "Black Quest 3",
+      "price": "Rs.9295",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11980026/2020/12/23/02b072c0-c489-46d3-a3e4-52cb2817d50a1608721666549-AIR-FORCE-1-07-4441608721664360-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open. so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon .A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction Cushioned footbed Textured and patterned outsoler"
     },
     {
       "id": 3,
-      "category": "t shirt",
-      "brand": "HRX",
-      "title": "Men Yellow T-shirt",
-      "price": "Rs.1200",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg",
-      "description": "Black and Yellow printed T-shirt, has a round neck, short sleeves"
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "Shield Running Shoe",
+      "price": "Rs.5995",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13327752/2021/1/25/68958407-03f7-4617-99b2-84864019be321611567644722-Nike-Quest-3-Mens-Running-Shoe-561611567642574-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes A padded collar with internal nodes provides comfort around your Achilles tendon A moulded groove in the forefoot helps the shoe flex"
     },
     {
       "id": 4,
-      "category": "t shirt",
-      "brand": "Natuca",
-      "title": "Short sleeves T-shirt",
-      "price": "Rs.1000",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11630422/2020/6/16/55ea37be-a977-4cdd-8310-aaa58e88625a1592300956516-Nautica-Men-Tshirts-2361592300954467-1.jpg",
-      "description": "Black and red printed T-shirt,short sleeves"
-    },
-    {
-      "id": 5,
-      "category": "t shirt",
-      "brand": "Natuca",
-      "title": "Red Men T-shirt",
-      "price": "Rs.1500",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12702950/2021/1/19/25be6f6c-743e-485c-b4e4-e6edf3df0dce1611037056288-Moda-Rapido-Men-Maroon-Printed-Hood-T-shirt-9581611037054956-1.jpg",
-      "description": "Red printed T-shirt,full sleeves"
-    },
-    {
-      "id": 1,
-      "category": "women",
-      "brand": "Anouk",
-      "title": "White suite",
-      "price": "Rs.900",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11620494/2020/9/17/db475e0d-6928-405d-8985-e6fa18b626bd1600326131509KurtasBibaWomenKurtaSetsBibaWomenKurtaSetsBibaWomen1.jpg",
-      "description": "White dress with designed pattern"
-    },
-    {
-      "id": 2,
-      "category": "women",
-      "brand": "Biba",
-      "title": "Yellow suite",
-      "price": "Rs.1200",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11620634/2020/9/21/4dd0881a-ec02-40e6-9d67-9808c4a38bc21600670964105-Biba-Women-Yellow--Silver-Printed-Kurta-with-Palazzos--Dupat-1.jpg",
-      "description": "Yellow Amradory with full sleeves pattern"
-    },
-    {
-      "id": 3,
-      "category": "women",
-      "brand": "Biba",
-      "title": "Pink top and Pajama",
-      "price": "Rs.1500",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12642734/2020/10/14/eb0aaaca-b2e5-4a5b-b220-bc62593a99ae1602650858687KurtaSetsBibaWomenKurtaSetsBibaWomenKurtaSetsBibaWomenKurtaS1.jpg",
-      "description": "Pink top with pajama looks, with traditional touch"
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Quest Running Shoe",
+      "price": "Rs.6520",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738820/2020/12/23/fc857867-1659-4fb4-8ac8-6ec8bdfc4e141608716795080-Nike-Quest-3-Shield-Mens-Running-Shoe-4581608716792681-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon"
     },
     {
       "id": 4,
-      "category": "women",
-      "brand": "Only",
-      "title": "One piece",
-      "price": "Rs.1680",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12630360/2020/11/23/43a287e8-6e59-48d6-b3c8-b29020e5d9fe1606128331424-ONLY-Women-Dresses-7381606128327493-1.jpg",
-      "description": "Pink one piece with decent color and simple design"
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Running Shoe",
+      "price": "Rs.9425(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738552/2020/12/23/57912158-952a-47c9-a5eb-d72bbd8020611608712536670-Jordan-Delta-Mens-Shoe-3351608712534943-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes"
     },
     {
       "id": 5,
-      "category": "women",
-      "brand": "Zara",
-      "title": "Zara's exclusive",
-      "price": "Rs.2080",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11383650/2020/2/10/fc8729c3-4ff9-4e75-8cd3-c2cb0e528ad21581329625968-ONLY-Women-Jeans-551581329624147-1.jpg",
-      "description": "Neavy blue jeans, slimfit, comfortable"
-    },
-    {
-      "id": 6,
-      "category": "women",
-      "brand": "ABB",
-      "title": "Mix silk saree",
-      "price": "Rs.3580",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11510258/2020/3/11/55b31058-6f7e-4c0f-b280-fca799c0c77c1583907999610-White--Pink-Floral-Digital-Print-Design-Oraganza-Saree-With--1.jpg",
-      "description": "Silk saree with sleeves less,simple and light design    "
+      "category": "shoe",
+      "brand": "Rebook",
+      "title": "Shield Running Shoe",
+      "price": "Rs.9200 (17% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979996/2021/1/11/2334f0e2-7ada-4549-aeae-20a0c3f4c3651610356726647-Nike-Joyride-Run-FlyknitMens-Running-Shoe-3321610356724731-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail"
     },
     {
       "id": 1,
-      "category": "watch",
-      "brand": "Fossil",
-      "title": "Watch leather belt",
-      "price": "Rs.3000",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/6741413/2019/1/10/29425b56-12c1-426a-aaa5-bf360eef97b61547121159030-Fossil-Women-White-Analogue-Watch-ES3795I_OR-337154712115768-1.jpg",
-      "description": "Looking good and decent in belt with metal dial"
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "AIR ZOOM PEGASUS",
+      "price": "Rs.9425(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979792/2021/1/4/f472c87a-b6a1-4bc9-bca0-fe9623c732781609749964408-Jordan-DeltaMens-Shoe-1341609749961996-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon. A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction. Cushioned footbed. Textured and patterned outsole"
     },
     {
       "id": 2,
-      "category": "watch",
-      "brand": "Casio",
-      "title": "G shock",
-      "price": "Rs.3500",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/1/5/1ee2dbbf-6e8d-424f-b12b-91cff4f7e4241609837282475-1.jpg",
-      "description": "G shock, classic look popular among teen ages"
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "Black Quest 3",
+      "price": "Rs.9295",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11980026/2020/12/23/02b072c0-c489-46d3-a3e4-52cb2817d50a1608721666549-AIR-FORCE-1-07-4441608721664360-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open. so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon .A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction Cushioned footbed Textured and patterned outsoler"
     },
     {
       "id": 3,
-      "category": "watch",
-      "brand": "FastTrack",
-      "title": "metal belt watch",
-      "price": "Rs.4000",
-      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7291770/2018/9/28/d9f36169-d05d-4269-805f-38f3d81009a41538135483274-Fastrack-Men-White-Analogue-Watch-9841538135483130-1.jpg",
-      "description": "FastTrack metal body with steel belt"
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "Shield Running Shoe",
+      "price": "Rs.5995",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13327752/2021/1/25/68958407-03f7-4617-99b2-84864019be321611567644722-Nike-Quest-3-Mens-Running-Shoe-561611567642574-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes A padded collar with internal nodes provides comfort around your Achilles tendon A moulded groove in the forefoot helps the shoe flex"
+    },
+    {
+      "id": 4,
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Quest Running Shoe",
+      "price": "Rs.6520",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738820/2020/12/23/fc857867-1659-4fb4-8ac8-6ec8bdfc4e141608716795080-Nike-Quest-3-Shield-Mens-Running-Shoe-4581608716792681-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon"
+    },
+    {
+      "id": 4,
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Running Shoe",
+      "price": "Rs.9425(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738552/2020/12/23/57912158-952a-47c9-a5eb-d72bbd8020611608712536670-Jordan-Delta-Mens-Shoe-3351608712534943-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes"
+    },
+    {
+      "id": 5,
+      "category": "shoe",
+      "brand": "Rebook",
+      "title": "Shield Running Shoe",
+      "price": "Rs.9200 (17% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979996/2021/1/11/2334f0e2-7ada-4549-aeae-20a0c3f4c3651610356726647-Nike-Joyride-Run-FlyknitMens-Running-Shoe-3321610356724731-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail"
+    },
+    {
+      "id": 1,
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "AIR ZOOM PEGASUS",
+      "price": "Rs.9425(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979792/2021/1/4/f472c87a-b6a1-4bc9-bca0-fe9623c732781609749964408-Jordan-DeltaMens-Shoe-1341609749961996-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon. A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction. Cushioned footbed. Textured and patterned outsole"
+    },
+    {
+      "id": 2,
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "Black Quest 3",
+      "price": "Rs.9295",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11980026/2020/12/23/02b072c0-c489-46d3-a3e4-52cb2817d50a1608721666549-AIR-FORCE-1-07-4441608721664360-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open. so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon .A moulded groove in the forefoot helps the shoe flex. Rubber outsole pods provide traction Cushioned footbed Textured and patterned outsoler"
+    },
+    {
+      "id": 3,
+      "category": "shoe",
+      "brand": "Nike",
+      "title": "Shield Running Shoe",
+      "price": "Rs.5995",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13327752/2021/1/25/68958407-03f7-4617-99b2-84864019be321611567644722-Nike-Quest-3-Mens-Running-Shoe-561611567642574-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail Mesh upper Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes A padded collar with internal nodes provides comfort around your Achilles tendon A moulded groove in the forefoot helps the shoe flex"
+    },
+    {
+      "id": 4,
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Quest Running Shoe",
+      "price": "Rs.6520",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738820/2020/12/23/fc857867-1659-4fb4-8ac8-6ec8bdfc4e141608716795080-Nike-Quest-3-Shield-Mens-Running-Shoe-4581608716792681-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes. A padded collar with internal nodes provides comfort around your Achilles tendon"
+    },
+    {
+      "id": 4,
+      "category": "shoe",
+      "brand": "Puma",
+      "title": "Running Shoe",
+      "price": "Rs.9425(18% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12738552/2020/12/23/57912158-952a-47c9-a5eb-d72bbd8020611608712536670-Jordan-Delta-Mens-Shoe-3351608712534943-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail, Webbing pull tabs are offset and designed to stay open, so they're easier to use when putting on your shoes"
+    },
+    {
+      "id": 5,
+      "category": "shoe",
+      "brand": "Rebook",
+      "title": "Shield Running Shoe",
+      "price": "Rs.9200 (17% OFF)",
+      "avatar": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11979996/2021/1/11/2334f0e2-7ada-4549-aeae-20a0c3f4c3651610356726647-Nike-Joyride-Run-FlyknitMens-Running-Shoe-3321610356724731-1.jpg",
+      "description": "A pair of round-toe black & beige sneakers, has regular styling, lace-up detail"
     }
   ]
 }

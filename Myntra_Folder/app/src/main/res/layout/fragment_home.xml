@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".HomeFragment">
 
     <androidx.appcompat.widget.Toolbar
-        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@color/white"
         android:elevation="6dp"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="horizontal">
+
             <ImageView
-                android:layout_weight="1"
-                android:padding="@dimen/dp10"
                 android:layout_width="@dimen/dp45"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-              android:src="@drawable/myntra_logo_home"
-                />
-            <LinearLayout
                 android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/myntra_logo_home" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Become"
                     android:textColor="@color/black"
                     android:textSize="10sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -47,102 +51,118 @@
                     android:textColor="@color/themeColor"
                     android:textSize="10sp" />
             </LinearLayout>
+
             <ImageButton
-                android:layout_weight="1"
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="@color/white"
                 android:padding="@dimen/dp15"
                 app:srcCompat="@drawable/ic_search" />
+
             <ImageButton
-                android:layout_weight="1"
                 android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="@color/white"
                 android:padding="@dimen/dp15"
                 app:srcCompat="@drawable/ic_notifications" />
+
             <ImageButton
-                android:layout_weight="1"
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/dp15"
-                android:background="@color/white"
-                app:srcCompat="@drawable/ic_wishlist" />
-            <ImageButton
                 android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/dp15"
+                app:srcCompat="@drawable/ic_wishlist" />
+
+            <ImageButton
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/dp15"
+                android:layout_weight="1"
                 android:background="@color/white"
-                app:srcCompat="@drawable/ic_shopping_bag"/>
+                android:padding="@dimen/dp15"
+                app:srcCompat="@drawable/ic_shopping_bag" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
 
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="@dimen/dp40"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <!--RoundImages LayoutStart-->
             <androidx.cardview.widget.CardView
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:id="@+id/cardRound"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp">
+
                     <HorizontalScrollView
                         android:layout_width="wrap_content"
-                        android:scrollbars="none"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
+
                             <ImageView
+                                android:id="@+id/roundImageOne"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageOne"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageTwo"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageTwo"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageThree"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageThree"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageFour"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageFour"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageFive"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageFive"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageSix"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageSix"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageSeven"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageSeven"/>
+                                android:layout_height="80dp" />
+
                             <ImageView
+                                android:id="@+id/roundImageEight"
                                 android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:id="@+id/roundImageEight"/>
+                                android:layout_height="80dp" />
                         </LinearLayout>
 
                     </HorizontalScrollView>
@@ -151,91 +171,96 @@
 
             <!-- Fragment layout View Start           -->
             <RelativeLayout
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:id="@+id/flContainerFirst"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cardRound">
 
-                                <androidx.viewpager.widget.ViewPager
-                                    android:id="@+id/viewpager"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="350dp"/>
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp" />
 
-                                <com.google.android.material.tabs.TabLayout
-                                    android:id="@+id/tabLayout"
-                                    android:background="#00000000"
-                                    app:tabGravity="center"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    app:tabBackground="@drawable/pager_selector_round"
-                                    app:tabIndicatorHeight="0dp"
-                                    android:layout_alignParentBottom="true"/>
-
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    app:tabBackground="@drawable/pager_selector_round"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
 
 
             </RelativeLayout>
 
             <TextView
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/flContainerFirst"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
                 android:id="@+id/tvBestBuys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:text="BEST BUYS"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flContainerFirst" />
 
             <!--   Best Buys View Start         -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/BestBuysCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/BestBuysCard"
                 android:layout_marginTop="10dp"
                 android:paddingBottom="5dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvBestBuys">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_marginBottom="8dp"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
                         <ImageView
                             android:id="@+id/bestBuysImageOne"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="4dp"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
+
                         <ImageView
                             android:id="@+id/bestBuysImageTwo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="4dp"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_marginBottom="8dp"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
                         <ImageView
                             android:id="@+id/bestBuysImageThree"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="4dp"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
+
                         <ImageView
                             android:id="@+id/bestBuysImageFour"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="4dp"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -244,15 +269,17 @@
             <!--    Glow up Sale View Start        -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/glowUpSaleCard"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/BestBuysCard"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/BestBuysCard">
+
                 <ImageView
                     android:id="@+id/glowUpSaleImage"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:clickable="true" />
 
             </androidx.cardview.widget.CardView>
 
@@ -261,176 +288,192 @@
 
 
             <LinearLayout
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/glowUpSaleCard"
                 android:id="@+id/tvValentinesDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
-                android:orientation="vertical">
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/glowUpSaleCard">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:text="VALENTINE'S DAY CORNER"
                     android:textColor="@color/black"
-                    android:text="VALENTINE'S DAY CORNER"/>
+                    android:textSize="16sp" />
+
                 <HorizontalScrollView
-                    android:layout_marginTop="10dp"
-                    android:scrollbars="none"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="230dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/valentinesImageOne"
                                 android:layout_width="230dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="230dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/valentinesImageTwo"
                                 android:layout_width="230dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="230dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/valentinesImageThree"
                                 android:layout_width="230dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="230dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/valentinesImageFour"
                                 android:layout_width="230dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="230dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/valentinesImageFive"
                                 android:layout_width="230dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
-
-
 
 
             <!--      Deals Of The Day Start      -->
 
 
             <LinearLayout
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvValentinesDay"
                 android:id="@+id/tvDealsOfThe"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvValentinesDay">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:text="DEALS OF THE DAY"
                     android:textColor="@color/black"
-                    android:text="DEALS OF THE DAY"/>
+                    android:textSize="16sp" />
+
                 <HorizontalScrollView
-                    android:layout_marginTop="10dp"
-                    android:scrollbars="none"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/dealsOfTheImageOne"
                                 android:layout_width="200dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="200dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/dealsOfTheImageTwo"
                                 android:layout_width="200dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="200dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/dealsOfTheImageThree"
                                 android:layout_width="200dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="200dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/dealsOfTheImageFour"
                                 android:layout_width="200dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="200dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/dealsOfTheImageFive"
                                 android:layout_width="200dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_margin="8dp"
                             android:layout_width="200dp"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
                             <ImageView
                                 android:id="@+id/dealsOfTheImageSix"
                                 android:layout_width="200dp"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
-
 
 
             <!--     Trends of the Season For Men Start       -->
@@ -439,77 +482,87 @@
                 android:id="@+id/TrendsMenCards"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toStartOf="parent"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvDealsOfThe">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
+                        android:text="TRENDS OF THE SEASON FOR MEN"
                         android:textColor="@color/black"
-                        android:text="TRENDS OF THE SEASON FOR MEN"/>
+                        android:textSize="16sp" />
+
                     <HorizontalScrollView
-                        android:layout_marginTop="10dp"
-                        android:scrollbars="none"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none">
+
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsMenImageOne"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsMenImageTwo"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsMenImageThree"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsMenImageFour"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsMenImageFive"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
@@ -524,77 +577,87 @@
                 android:id="@+id/TrendsWomenCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toStartOf="parent"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/TrendsMenCards">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
+                        android:text="TREND OF THE SEASON FOR WOMEN"
                         android:textColor="@color/black"
-                        android:text="TREND OF THE SEASON FOR WOMEN"/>
+                        android:textSize="16sp" />
+
                     <HorizontalScrollView
-                        android:layout_marginTop="10dp"
-                        android:scrollbars="none"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none">
+
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsWomenImageOne"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsWomenImageTwo"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsWomenImageThree"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsWomenImageFour"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsWomenImageFive"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
@@ -609,77 +672,87 @@
                 android:id="@+id/TrendsKidsCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toStartOf="parent"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/TrendsWomenCard">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
+                        android:text="TREND OF THE SEASON FOR KIDS"
                         android:textColor="@color/black"
-                        android:text="TREND OF THE SEASON FOR KIDS"/>
+                        android:textSize="16sp" />
+
                     <HorizontalScrollView
-                        android:layout_marginTop="10dp"
-                        android:scrollbars="none"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none">
+
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsKidsImageOne"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsKidsImageTwo"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsKidsImageThree"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsKidsImageFour"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:layout_margin="8dp"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
                                 <ImageView
                                     android:id="@+id/trendsKidsImageFive"
                                     android:layout_width="250dp"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="wrap_content" />
                             </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
@@ -692,69 +765,82 @@
 
             <LinearLayout
                 android:id="@+id/premiumCard"
-                app:layout_constraintTop_toBottomOf="@id/TrendsKidsCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/TrendsKidsCard">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/premiumTitleImage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/premiumImageOne"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/premiumImageTwo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/premiumImageThree"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/premiumImageFour"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/premiumImageFive"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/premiumImageSix"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/premiumImageSeven"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
 
             </LinearLayout>
+
             <RelativeLayout
                 android:id="@+id/flContainerSecond"
                 android:layout_width="match_parent"
@@ -779,132 +865,154 @@
 
             <!--            Most Loved Brand View Start From Here     -->
             <ImageView
-                app:layout_constraintTop_toBottomOf="@id/flContainerSecond"
                 android:id="@+id/mostLovedTitle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/flContainerSecond" />
+
             <LinearLayout
                 android:id="@+id/mostLovedCard"
-                app:layout_constraintTop_toBottomOf="@id/mostLovedTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/mostLovedTitle">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/mostLovedImageOne"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/mostLovedImageTwo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/mostLovedImageThree"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/mostLovedImageFour"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/mostLovedImageFive"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/mostLovedImageSix"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/mostLovedImageSeven"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/mostLovedImageEight"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/mostLovedImageNine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
             </LinearLayout>
 
             <!--            The Endless List of Gifts Start from here-->
 
             <ImageView
-                app:layout_constraintTop_toBottomOf="@id/mostLovedCard"
                 android:id="@+id/endlessGiftsTitle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/mostLovedCard" />
+
             <LinearLayout
                 android:id="@+id/endlessGiftsCard"
-                app:layout_constraintTop_toBottomOf="@id/mostLovedTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/mostLovedTitle">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/endlessGiftsImageOne"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/endlessGiftsImageTwo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/endlessGiftsImageThree"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/endlessGiftsImageFour"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:id="@+id/endlessGiftsImageFive"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/endlessGiftsImageSix"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
                 </LinearLayout>
 
             </LinearLayout>
