@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment implements NavigationView.OnNavigatio
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//         THIS FRAGMENT IS FOR TRAIL NOT FOR USE...
+//         THIS FRAGMENT IS FOR TRAIL NOT FOR USE.........
     }
 
 
