@@ -40,7 +40,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/dp10"
                     android:background="@color/white"
-                    android:hint="Search for Items     "
+                    android:hint="Search for Items        "
                     android:textSize="@dimen/sp15" />
 
                 <Button
