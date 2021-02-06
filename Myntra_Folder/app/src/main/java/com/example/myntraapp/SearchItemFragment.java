@@ -36,7 +36,7 @@ public class SearchItemFragment extends Fragment{
     private boolean isWishList = false;
     private Button mBtnXs, mBtnS , mBtnM, mBtnL, mBtnXL;
     private boolean isSizeSelected=false;
-
+    private View mBackInProductPage;
 
     public SearchItemFragment() {
         // Required empty public constructor
@@ -77,11 +77,19 @@ public class SearchItemFragment extends Fragment{
         mTvPriceOfProduct = view.findViewById(R.id.priceToBuy);
         mBtnAddToBag = view.findViewById(R.id.btnAddToBag);
         mBtnWishList = view.findViewById(R.id.btnWishList);
+        mBackInProductPage =view.findViewById(R.id.backInProductPage);
         mBtnXs = view.findViewById(R.id.btnXs);
         mBtnS = view.findViewById(R.id.btnS);
         mBtnM = view.findViewById(R.id.btnM);
         mBtnL = view.findViewById(R.id.btnL);
         mBtnXL = view.findViewById(R.id.btnXL);
+
+        mBackInProductPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().finish();
+            }
+        });
 
         mBtnAddToBag.setOnClickListener(new View.OnClickListener() {
             @Override

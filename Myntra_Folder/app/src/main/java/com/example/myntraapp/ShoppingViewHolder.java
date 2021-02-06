@@ -18,6 +18,7 @@ public class ShoppingViewHolder extends RecyclerView.ViewHolder {
     private TextView mTvShopPrice;
     private ListenerForShopping listenerForShopping;
 
+
     public ShoppingViewHolder(@NonNull View itemView, ListenerForShopping listenerForShopping) {
         super(itemView);
         this.listenerForShopping = listenerForShopping;

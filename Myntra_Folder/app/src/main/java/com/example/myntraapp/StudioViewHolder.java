@@ -21,6 +21,7 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
     private ImageView mStudioImage;
     public View mLikePost;
     public View mSavePost;
+    public View mShare;
     private TextView mStudioDescription;
     private Boolean token= false;
     private ItemClickListener itemClickListener;
@@ -39,6 +40,7 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
         mStudioImage = itemView.findViewById(R.id.imagePerson);
         mSavePost = itemView.findViewById(R.id.vSave);
         mLikePost = itemView.findViewById(R.id.LikePost);
+        mShare = itemView.findViewById(R.id.shareInStudio);
         mStudioDescription = itemView.findViewById(R.id.studioDescription);
     }
 
@@ -48,6 +50,12 @@ public class StudioViewHolder extends RecyclerView.ViewHolder {
         mStudioTime.setText(studioStudioModel.getOnlineStatus());
         Glide.with(mStudioImage).load(studioStudioModel.getAvatar()).into(mStudioImage);
         mStudioDescription.setText(studioStudioModel.getDescription());
+        mShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemClickListener.onItemClick(studioStudioModel,getLayoutPosition());
+            }
+        });
 
     }
 }

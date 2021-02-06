@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content">
 
                 <View
+                    android:id="@+id/backInSearch"
                     android:layout_width="@dimen/dp30"
                     android:layout_height="@dimen/dp30"
                     android:layout_gravity="center"

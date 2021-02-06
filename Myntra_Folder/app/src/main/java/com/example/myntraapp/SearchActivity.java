@@ -39,6 +39,7 @@ public class SearchActivity extends AppCompatActivity implements ListenerForShop
     private Button mBtnCamera;
     private ShoppingAdapter shoppingAdapter;
     private Button mBtnMic;
+    private View mBackInSearch;
     private String Category;
     private ListenerForShopping listenerForShopping;
     private String sample;
@@ -64,9 +65,17 @@ public class SearchActivity extends AppCompatActivity implements ListenerForShop
         mSearchCategory = findViewById(R.id.etSearchItem);
         mBtnSearch = findViewById(R.id.btnSearchItem);
         mBtnCamera = findViewById(R.id.btnCamera);
+        mBackInSearch = findViewById(R.id.backInSearch);
         Category = mSearchCategory.getText().toString();
         progressBar.setVisibility(View.VISIBLE);
 //        sample = men;
+
+        mBackInSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         mBtnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
